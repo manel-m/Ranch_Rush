@@ -15,10 +15,11 @@
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
+    {"name":"sPlayer","order":1,"path":"folders/Sprites/sPlayer.yy",},
+    {"name":"Player","order":1,"path":"folders/Objects/Player.yy",},
   ],
   "ResourceOrderSettings": [
-    {"name":"Object2","order":1,"path":"objects/Object2/Object2.yy",},
-    {"name":"dirt","order":1,"path":"sprites/dirt/dirt.yy",},
+    {"name":"sPlayer_Move","order":1,"path":"sprites/sPlayer_Move/sPlayer_Move.yy",},
     {"name":"gameRoom","order":1,"path":"rooms/gameRoom/gameRoom.yy",},
   ],
 }
