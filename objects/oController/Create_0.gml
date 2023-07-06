@@ -7,6 +7,9 @@ enum RES {
 	SCALE = 3
 }
 
+// Create camera that follows the player
+//var _camera = camera_create_view(0,0,RES.WIDTH,RES.HEIGHT, 0, oPlayer, -1,-1,RES.WIDTH/2, RES.HEIGHT/2);
+
 
 // Create camera 
 var _camera = camera_create_view(18,25,RES.WIDTH,RES.HEIGHT, 0)

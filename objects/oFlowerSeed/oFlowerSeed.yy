@@ -1,16 +1,13 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oController",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":12,"isDnD":false,},
-  ],
+  "name": "oFlowerSeed",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "oSeeds",
+    "path": "folders/Objects/oSeeds.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -28,7 +25,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "sFlowerSeed",
+    "path": "sprites/sFlowerSeed/sFlowerSeed.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }
