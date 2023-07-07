@@ -7,7 +7,23 @@ if (autoMove) {
 	var _inputX  = sign(autoMoveX - x);
 	var _inputY = sign(autoMoveY - y);
 	//check if player arrived to target
-	if (x == autoMoveX && y == autoMoveY) autoMove = false;
+	if (x == autoMoveX && y == autoMoveY) {
+		autoMove = false;
+		if (intent == PlayerState.SEEDSBAG) {
+			
+			//wht happens when arrive to bag of seeds
+			show_debug_message("ARRIVRD AT BAG OF SEEDS")
+			intent = PlayerState.NONE;
+			holding = PlayerState.SEEDSBAG;
+			
+			//change player spirte that holding the bag of seeds (check witch seed)
+			//if (seed = Seeds.CLOVER) {
+			//	sprite_index = sPlayer_Move;
+			
+			//}
+		}
+	
+	}
 }
 
 

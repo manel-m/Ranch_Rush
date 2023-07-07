@@ -32,6 +32,7 @@
     {"name":"sCrates","order":1,"path":"sprites/sCrates/sCrates.yy",},
     {"name":"oWell","order":3,"path":"objects/oWell/oWell.yy",},
     {"name":"barn","order":4,"path":"sprites/barn/barn.yy",},
+    {"name":"oSeedsBag","order":1,"path":"objects/oSeedsBag/oSeedsBag.yy",},
     {"name":"oCrates","order":2,"path":"objects/oCrates/oCrates.yy",},
     {"name":"sSoil","order":3,"path":"sprites/sSoil/sSoil.yy",},
     {"name":"gameRoom","order":1,"path":"rooms/gameRoom/gameRoom.yy",},

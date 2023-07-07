@@ -1,15 +1,20 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oFlowerSeed",
-  "eventList": [],
+  "name": "oCloverSeed",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
     "name": "oSeeds",
     "path": "folders/Objects/oSeeds.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "oSeedsBag",
+    "path": "objects/oSeedsBag/oSeedsBag.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -26,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sFlowerSeed",
-    "path": "sprites/sFlowerSeed/sFlowerSeed.yy",
+    "name": "sCloverSeed",
+    "path": "sprites/sCloverSeed/sCloverSeed.yy",
   },
   "spriteMaskId": null,
   "visible": true,

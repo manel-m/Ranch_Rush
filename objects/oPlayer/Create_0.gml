@@ -1,11 +1,11 @@
 /// @description 
 // You can write your code in this editor
 
+
 //Properties 
 moveSpeed = 1;
-
-
 //Variables 
+
 moveX = 0;
 moveY = 0; 
 
@@ -19,3 +19,14 @@ boostY = 0;
 autoMove = false;
 autoMoveX = 0;
 autoMoveY = 0;
+
+//player is holding items
+enum PlayerState {
+	NONE,
+	SEEDSBAG,
+	SOIL
+}
+
+holding = PlayerState.NONE;
+intent = PlayerState.NONE;
+seed = noone;
