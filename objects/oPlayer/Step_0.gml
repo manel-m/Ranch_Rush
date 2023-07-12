@@ -16,11 +16,30 @@ if (autoMove) {
 			intent = PlayerState.NONE;
 			holding = PlayerState.SEEDSBAG;
 			
-			//change player spirte that holding the bag of seeds (check witch seed)
+			//change player spirte that holding the bag of seeds (check which seed)
 			//if (seed = Seeds.CLOVER) {
 			//	sprite_index = sPlayer_Move;
 			
 			//}
+		}
+		
+		if (intent = PlayerState.SOIL){
+		
+			//wht happens when arrive to the soil
+			show_debug_message("ARRIVRD TO SOIL")
+			intent = PlayerState.NONE;
+			if (soil.state == SoilState.EMPTY && holding == PlayerState.SEEDSBAG) {
+				holding = PlayerState.NONE;
+				soil.state = SoilState.PLANTED;
+				show_debug_message("SOIL PLANTED")
+				
+				//create an instance of oPlant check which seed before the creation than oPlayer.seed = noone;
+				if (seed == Seeds.CLOVER ) {
+					oPlayer.seed = noone;
+					instance_create_layer(soil.x,soil.y-3,"PlantInstances",oFlowerPlant); 
+				}
+			}			
+
 		}
 	
 	}

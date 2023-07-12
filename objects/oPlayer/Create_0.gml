@@ -30,3 +30,4 @@ enum PlayerState {
 holding = PlayerState.NONE;
 intent = PlayerState.NONE;
 seed = noone;
+soil = noone;
