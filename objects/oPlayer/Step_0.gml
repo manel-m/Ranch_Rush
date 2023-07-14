@@ -12,13 +12,13 @@ if (autoMove) {
 		if (intent == PlayerState.SEEDSBAG) {
 			
 			//wht happens when arrive to bag of seeds
-			show_debug_message("ARRIVRD AT BAG OF SEEDS")
+			show_debug_message("ARRIVED AT BAG OF SEEDS")
 			intent = PlayerState.NONE;
 			holding = PlayerState.SEEDSBAG;
 			
 			//change player spirte that holding the bag of seeds (check which seed)
 			//if (seed = Seeds.CLOVER) {
-			//	sprite_index = sPlayer_Move;
+			//	sprite_index = sPlayer_Move_Seed;
 			
 			//}
 		}
@@ -26,7 +26,7 @@ if (autoMove) {
 		if (intent = PlayerState.SOIL){
 		
 			//wht happens when arrive to the soil
-			show_debug_message("ARRIVRD TO SOIL")
+			show_debug_message("ARRIVED TO SOIL")
 			intent = PlayerState.NONE;
 			if (soil.state == SoilState.EMPTY && holding == PlayerState.SEEDSBAG) {
 				holding = PlayerState.NONE;
@@ -41,7 +41,33 @@ if (autoMove) {
 			}			
 
 		}
-	
+		
+		if (intent == PlayerState.CRATES){
+			//wht happens when arrive to the soil
+			show_debug_message("ARRIVED TO CRATES")
+			intent = PlayerState.NONE;
+			if (holding == PlayerState.NONE) {
+				show_debug_message("HOLDING A CRATE");
+
+				holding = PlayerState.CRATES;
+				//change player animation to move holding a crate
+				//sprite_index = sPlayer_Move_Crate;
+			}
+		}
+		
+		//if (intent == PlayerState.PLANTS){
+		//	//wht happens when arrive to the soil
+		//	show_debug_message("ARRIVED TO PLANTS");
+		//	intent = PlayerState.NONE;
+		//	if (holding == PlayerState.CRATES && oFlowerPlant.state == PlantState.READY) {
+		//		holding = noone;
+		//		//draw crate sprite on the soil in draw
+			
+		//	}
+
+			
+		
+		//}
 	}
 }
 
@@ -68,10 +94,21 @@ y += moveY;
 // choose player animation
 if (moveX != 0 or moveY != 0 ){
 		//Animation: Move 
-	sprite_index = sPlayer_Move;
+		if (holding == PlayerState.CRATES){
+			sprite_index = sPlayer_Move_Crate;
+		} else {
+			sprite_index = sPlayer_Move;
+		}	
+
 } else {
 	//Animation : Idle
-	sprite_index = sPlayer_Idle;
+	if (holding == PlayerState.CRATES) {
+		sprite_index = sPlayer_Idle_Crate;
+	} else {
+		sprite_index = sPlayer_Idle;
+
+	}
+	
 }
 
 //Direction

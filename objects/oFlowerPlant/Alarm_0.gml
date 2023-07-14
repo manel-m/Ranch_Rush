@@ -1,4 +1,4 @@
-/// @description 
+/// @description to grow plants
 
 image_index++;
 

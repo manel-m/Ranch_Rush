@@ -24,10 +24,13 @@ autoMoveY = 0;
 enum PlayerState {
 	NONE,
 	SEEDSBAG,
-	SOIL
+	SOIL,
+	CRATES,
+	PLANTS
 }
 
 holding = PlayerState.NONE;
 intent = PlayerState.NONE;
 seed = noone;
 soil = noone;
+plant = noone;
