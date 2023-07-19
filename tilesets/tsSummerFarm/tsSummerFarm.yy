@@ -16,8 +16,8 @@
     "path": "folders/Tile Sets.yy",
   },
   "spriteId": {
-    "name": "sBg_Summer",
-    "path": "sprites/sBg_Summer/sBg_Summer.yy",
+    "name": "spr_bg_summer",
+    "path": "sprites/spr_bg_summer/spr_bg_summer.yy",
   },
   "spriteNoExport": true,
   "textureGroupId": {
