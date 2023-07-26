@@ -22,7 +22,7 @@ auto_move_y = 0;
 
 can_move = true;
 
-//player is holding items
+// player state
 enum PLAYER_STATE {
 	NONE,
 	GOTO_SEEDSBAG,
@@ -32,12 +32,14 @@ enum PLAYER_STATE {
 	HARVEST
 }
 
+
+//player is holding items
 enum PLAYER_HOLDING {
 	NONE,
 	SEEDSBAG,
-	CRATES,
+	CRATE,
 	PLANTS_CRATE
-};
+}
 
 holding = PLAYER_HOLDING.NONE;
 action = PLAYER_STATE.NONE;

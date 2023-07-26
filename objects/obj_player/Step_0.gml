@@ -48,7 +48,7 @@ if (auto_move) {
 			if (holding == PLAYER_HOLDING.NONE) {
 				show_debug_message("HOLDING A CRATE");
 
-				holding = PLAYER_HOLDING.CRATES;
+				holding = PLAYER_HOLDING.CRATE;
 				//change player animation to move holding a crate 
 				//did it in change player animation down
 				
@@ -59,7 +59,7 @@ if (auto_move) {
 			//wht happens when arrive to the soil
 			show_debug_message("ARRIVED TO GOTO_PLANTS");
 			action = PLAYER_STATE.NONE;
-			if (holding == PLAYER_HOLDING.CRATES && plant.state == PLANT_STATE.READY) {
+			if (holding == PLAYER_HOLDING.CRATE && plant.state == PLANT_STATE.READY) {
 				holding = PLAYER_HOLDING.NONE;
 				action = PLAYER_STATE.HARVEST;
 				can_move = false
@@ -97,7 +97,7 @@ y += move_y;
 // choose player animation
 if (move_x != 0 or move_y != 0 ){
 		//Animation: Move 
-		if (holding == PLAYER_HOLDING.CRATES){
+		if (holding == PLAYER_HOLDING.CRATE){
 			sprite_index = spr_player_move_crate;
 		} else if (holding == PLAYER_HOLDING.PLANTS_CRATE){
 			sprite_index = spr_player_move_plant_crate;
@@ -109,7 +109,7 @@ if (move_x != 0 or move_y != 0 ){
 
 } else {
 	//Animation : Idle
-	if (holding == PLAYER_HOLDING.CRATES) {
+	if (holding == PLAYER_HOLDING.CRATE) {
 		sprite_index = spr_player_idle_crate;
 	} else if (action == PLAYER_STATE.HARVEST) {
 		sprite_index = spr_player_harvest;
@@ -125,6 +125,15 @@ if (move_x != 0 or move_y != 0 ){
 			holding = PLAYER_HOLDING.PLANTS_CRATE
 			start_harvest = true;
 			can_move = true;
+			
+			//reset the state of the harvested plant
+			//plant.image_index = 0;
+			//plant.alarm[0]= plant.grow_speed;
+			with plant {
+				event_user(0);
+			
+			}
+			
 		}
 	} else if (holding == PLAYER_HOLDING.PLANTS_CRATE) {
 		sprite_index = spr_player_idle_plant_crate;

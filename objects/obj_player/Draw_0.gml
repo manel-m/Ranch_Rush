@@ -7,7 +7,7 @@ draw_self();
 if (holding == PLAYER_HOLDING.SEEDSBAG) {
 	if (seed == SEEDS.CLOVER ) 	draw_sprite_ext( spr_clover_seed, 0, x, y, 0.7, 0.7, 0,c_white, 1 );
 } 
-//else if (holding == PLAYER_HOLDING.CRATES) {
+//else if (holding == PLAYER_HOLDING.CRATE) {
 //		draw_sprite_ext( sCrate_Move, image_index, x, y, 1, 1, 0, c_white, 1 );
 //}
 
