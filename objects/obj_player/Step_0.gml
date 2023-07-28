@@ -57,7 +57,7 @@ if (auto_move) {
 		
 		if (action == PLAYER_STATE.GOTO_PLANTS){
 			//wht happens when arrive to the soil
-			show_debug_message("ARRIVED TO GOTO_PLANTS");
+			show_debug_message("ARRIVED TO PLANTS");
 			action = PLAYER_STATE.NONE;
 			if (holding == PLAYER_HOLDING.CRATE && plant.state == PLANT_STATE.READY) {
 				holding = PLAYER_HOLDING.NONE;
@@ -65,11 +65,19 @@ if (auto_move) {
 				can_move = false
 				//draw crate sprite on the soil in draw
 				//change player animation to palyer harvet
-				//sprite_index = sPlayer_harvest; 
 			}
-
-			
+		}
 		
+		if (action == PLAYER_STATE.GOTO_BARN) {
+			//wht happens when arrive to the barn
+			show_debug_message("ARRIVED TO THE BARN");
+			action = PLAYER_STATE.NONE;
+			if (holding == PLAYER_HOLDING.PLANTS_CRATE){
+				if (obj_controller.flower_goal>0) 	obj_controller.flower_goal --;
+			}
+			
+			holding = PLAYER_HOLDING.NONE;
+
 		}
 	}
 }

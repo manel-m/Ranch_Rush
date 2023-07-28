@@ -2,12 +2,15 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_goal_box",
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "obj_UI",
-    "path": "folders/Objects/obj_UI.yy",
+    "name": "obj_GUI",
+    "path": "folders/Objects/obj_GUI.yy",
   },
   "parentObjectId": null,
   "persistent": false,

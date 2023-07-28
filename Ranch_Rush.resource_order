@@ -9,7 +9,7 @@
     {"name":"obj_PLANTS","order":4,"path":"folders/Objects/obj_PLANTS.yy",},
     {"name":"obj_PLAYER","order":1,"path":"folders/Objects/obj_PLAYER.yy",},
     {"name":"obj_SEEDS","order":5,"path":"folders/Objects/obj_SEEDS.yy",},
-    {"name":"obj_UI","order":6,"path":"folders/Objects/obj_UI.yy",},
+    {"name":"obj_GUI","order":6,"path":"folders/Objects/obj_GUI.yy",},
     {"name":"Particle Systems","order":15,"path":"folders/Particle Systems.yy",},
     {"name":"Paths","order":4,"path":"folders/Paths.yy",},
     {"name":"Rooms","order":10,"path":"folders/Rooms.yy",},
