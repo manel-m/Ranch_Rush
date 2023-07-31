@@ -6,7 +6,7 @@
   "applyKerning": 0,
   "ascender": 10,
   "ascenderOffset": 0,
-  "bold": false,
+  "bold": true,
   "canGenerateBitmap": true,
   "charset": 0,
   "first": 0,
@@ -113,7 +113,7 @@
   "hinting": 0,
   "includeTTF": false,
   "interpreter": 0,
-  "italic": false,
+  "italic": true,
   "kerningPairs": [
     {"amount":-1,"first":70,"second":44,},
     {"amount":-1,"first":70,"second":46,},
@@ -190,7 +190,7 @@
   ],
   "regenerateBitmap": false,
   "sampleText": "abcdef ABCDEF\n0123456789 .,<>\"'&!?\nthe quick brown fox jumps over the lazy dog\nTHE QUICK BROWN FOX JUMPS OVER THE LAZY DOG\nDefault character: ▯ (9647)",
-  "sdfSpread": 14,
+  "sdfSpread": 10,
   "size": 8.0,
   "styleName": "Book",
   "textureGroupId": {
