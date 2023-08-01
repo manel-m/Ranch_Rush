@@ -22,4 +22,7 @@ view_set_camera(0,_camera);
 
 
 //daily goals 
-flower_goal = 3;
+flower_goal = 1;
+
+//pause the game 
+global.pause = false;

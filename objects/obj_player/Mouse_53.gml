@@ -1,6 +1,6 @@
 /// @description 
 
-if (can_move) {
+if (can_move and !global.pause) {
 	show_debug_message("LEFT CLICK");
 	auto_move = true;
 	auto_move_x = device_mouse_x(0);

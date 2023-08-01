@@ -9,6 +9,8 @@ if (auto_move) {
 	//check if player arrived to target
 	if (x == auto_move_x && y == auto_move_y) {
 		auto_move = false;
+		//instance_create_layer(0,0, "GUI_Instances", obj_success_box);
+
 		
 		if (action == PLAYER_STATE.GOTO_SEEDSBAG) {
 			
@@ -73,7 +75,9 @@ if (auto_move) {
 			show_debug_message("ARRIVED TO THE BARN");
 			action = PLAYER_STATE.NONE;
 			if (holding == PLAYER_HOLDING.PLANTS_CRATE){
-				if (obj_controller.flower_goal>0) 	obj_controller.flower_goal --;
+				if (obj_controller.flower_goal>0) {
+					obj_controller.flower_goal--;
+				}	
 			}
 			
 			holding = PLAYER_HOLDING.NONE;
