@@ -44,6 +44,7 @@ enum PLAYER_HOLDING {
 
 holding = PLAYER_HOLDING.NONE;
 action = PLAYER_STATE.NONE;
+
 seed = noone;
 soil = noone;
 plant = noone;

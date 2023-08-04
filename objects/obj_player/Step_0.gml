@@ -142,7 +142,7 @@ if (move_x != 0 or move_y != 0 ){
 			//plant.image_index = 0;
 			//plant.alarm[0]= plant.grow_speed;
 			with plant {
-				event_user(0);
+				event_user(1);
 			
 			}
 			

@@ -1,5 +1,5 @@
-/// @description  reset the state of the harvested plant
+/// @description when the player choose plant as a target
 
-
-image_index = 0;
-alarm[0]= grow_speed;
+obj_player.action = PLAYER_STATE.GOTO_PLANTS;
+obj_player.plant = id;
+show_debug_message("CLICK ON FLOWER")
