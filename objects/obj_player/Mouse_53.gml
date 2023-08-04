@@ -1,9 +1,9 @@
 /// @description 
 
 if (can_move and !global.pause) {
-	auto_move = true;
-	auto_move_x = device_mouse_x(0);
-	auto_move_y = device_mouse_y(0); 
+	//auto_move = true;
+	//auto_move_x = device_mouse_x(0);
+	//auto_move_y = device_mouse_y(0); 
 	
 	// Find top most object we clicked on
 	var _list = ds_list_create();
@@ -29,7 +29,12 @@ if (can_move and !global.pause) {
 		}
 	} else {
 		// we didn't click on any object
-		show_debug_message("GLOBAL LEFT CLICK");
+		var _action = {
+			x: device_mouse_x(0),
+			y: device_mouse_y(0),
+			type: PLAYER_STATE.NONE
+		}
+		ds_queue_enqueue(actions_queue, _action)
 	}
 
 	ds_list_destroy(_list);

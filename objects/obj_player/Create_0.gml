@@ -51,3 +51,6 @@ plant = noone;
 
 // to start harvest animation from the first frame
 start_harvest = true;
+
+// actions queue
+actions_queue = ds_queue_create()

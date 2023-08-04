@@ -3,6 +3,34 @@
 var _input_x = 0;
 var _input_y = 0;
 
+if (!auto_move && !global.pause && action == PLAYER_STATE.NONE) {
+	// player is ready to do an action
+	if (!ds_queue_empty(actions_queue)) {
+		var _action = ds_queue_dequeue(actions_queue);
+		action = _action.type;
+		auto_move = true;
+		auto_move_x = _action.x;
+		auto_move_y = _action.y;
+		
+		if (action == PLAYER_STATE.NONE) {
+			show_debug_message("ACTION: global click")
+		} else if (action == PLAYER_STATE.GOTO_SEEDSBAG) {
+			show_debug_message("ACTION: goto seed bag")
+			seed = _action.seed			
+		} else if (action == PLAYER_STATE.GOTO_SOIL) {
+			show_debug_message("ACTION: goto soil")
+			soil = _action.soil
+		} else if (action == PLAYER_STATE.GOTO_CRATES) {
+			show_debug_message("ACTION: goto crates")
+		} else if (action == PLAYER_STATE.GOTO_PLANTS) {
+			show_debug_message("ACTION: goto plant")
+			plant = _action.plant
+		} else if (action == PLAYER_STATE.GOTO_BARN) {
+			show_debug_message("ACTION: goto barn")
+		}
+	}
+}
+
 if (auto_move) {
 	 _input_x  = sign(auto_move_x - x);
 	 _input_y = sign(auto_move_y - y);
