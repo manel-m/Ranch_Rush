@@ -9,7 +9,7 @@ if (auto_move) {
 	//check if player arrived to target
 	if (x == auto_move_x && y == auto_move_y) {
 		auto_move = false;
-		//instance_create_layer(0,0, "GUI_Instances", obj_success_box);
+		instance_create_layer(0,0, "GUI_Instances", obj_success_box);
 
 		
 		if (action == PLAYER_STATE.GOTO_SEEDSBAG) {

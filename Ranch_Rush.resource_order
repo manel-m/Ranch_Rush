@@ -42,6 +42,7 @@
     {"name":"spr_player_idle_plant_crate","order":7,"path":"sprites/spr_player_idle_plant_crate/spr_player_idle_plant_crate.yy",},
     {"name":"spr_soil","order":3,"path":"sprites/spr_soil/spr_soil.yy",},
     {"name":"fnt_nico_paint","order":2,"path":"fonts/fnt_nico_paint/fnt_nico_paint.yy",},
+    {"name":"obj_coins","order":2,"path":"objects/obj_coins/obj_coins.yy",},
     {"name":"spr_flower_plant","order":1,"path":"sprites/spr_flower_plant/spr_flower_plant.yy",},
     {"name":"gameRoom","order":1,"path":"rooms/gameRoom/gameRoom.yy",},
     {"name":"obj_barn","order":1,"path":"objects/obj_barn/obj_barn.yy",},

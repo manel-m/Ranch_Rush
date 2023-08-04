@@ -23,6 +23,8 @@ view_set_camera(0,_camera);
 
 //daily goals 
 flower_goal = 1;
+daily_coins = 200;
+coins = 2000;
 
 //pause the game 
 global.pause = false;

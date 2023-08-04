@@ -66,6 +66,7 @@
     {"id":{"name":"spr_soil","path":"sprites/spr_soil/spr_soil.yy",},},
     {"id":{"name":"fnt_nico_paint","path":"fonts/fnt_nico_paint/fnt_nico_paint.yy",},},
     {"id":{"name":"spr_light_box","path":"sprites/spr_light_box/spr_light_box.yy",},},
+    {"id":{"name":"obj_coins","path":"objects/obj_coins/obj_coins.yy",},},
     {"id":{"name":"spr_flower_plant","path":"sprites/spr_flower_plant/spr_flower_plant.yy",},},
     {"id":{"name":"gameRoom","path":"rooms/gameRoom/gameRoom.yy",},},
     {"id":{"name":"obj_barn","path":"objects/obj_barn/obj_barn.yy",},},
