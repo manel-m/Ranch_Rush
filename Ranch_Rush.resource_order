@@ -22,7 +22,7 @@
     {"name":"sPlants","order":8,"path":"folders/Sprites/sPlants.yy",},
     {"name":"sPlayer","order":1,"path":"folders/Sprites/sPlayer.yy",},
     {"name":"sSeeds","order":9,"path":"folders/Sprites/sSeeds.yy",},
-    {"name":"sUI","order":10,"path":"folders/Sprites/sUI.yy",},
+    {"name":"sGUI","order":10,"path":"folders/Sprites/sGUI.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
@@ -37,6 +37,7 @@
     {"name":"spr_bg_summer","order":6,"path":"sprites/spr_bg_summer/spr_bg_summer.yy",},
     {"name":"obj_well","order":3,"path":"objects/obj_well/obj_well.yy",},
     {"name":"spr_barn","order":4,"path":"sprites/spr_barn/spr_barn.yy",},
+    {"name":"spr_check_mark","order":1,"path":"sprites/spr_check_mark/spr_check_mark.yy",},
     {"name":"obj_seeds_bag","order":1,"path":"objects/obj_seeds_bag/obj_seeds_bag.yy",},
     {"name":"obj_crates","order":2,"path":"objects/obj_crates/obj_crates.yy",},
     {"name":"spr_player_idle_plant_crate","order":7,"path":"sprites/spr_player_idle_plant_crate/spr_player_idle_plant_crate.yy",},
@@ -51,5 +52,6 @@
     {"name":"obj_success_box","order":1,"path":"objects/obj_success_box/obj_success_box.yy",},
     {"name":"spr_well","order":2,"path":"sprites/spr_well/spr_well.yy",},
     {"name":"spr_Crate_Move","order":3,"path":"sprites/spr_Crate_Move/spr_Crate_Move.yy",},
+    {"name":"obj_check_mark","order":3,"path":"objects/obj_check_mark/obj_check_mark.yy",},
   ],
 }

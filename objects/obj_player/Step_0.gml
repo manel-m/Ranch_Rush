@@ -12,6 +12,10 @@ if (!auto_move && !global.pause && action == PLAYER_STATE.NONE) {
 		auto_move_x = _action.x;
 		auto_move_y = _action.y;
 		
+		if (struct_exists(_action, "check_mark")) {
+			check_mark = _action.check_mark;
+		}
+		
 		if (action == PLAYER_STATE.NONE) {
 			show_debug_message("ACTION: global click")
 		} else if (action == PLAYER_STATE.GOTO_SEEDSBAG) {
@@ -37,8 +41,10 @@ if (auto_move) {
 	//check if player arrived to target
 	if (x == auto_move_x && y == auto_move_y) {
 		auto_move = false;
-		//instance_create_layer(0,0, "GUI_Instances", obj_success_box);
-
+		
+		// player is going to execute its current action	
+		instance_destroy(check_mark);
+		check_mark = noone;
 		
 		if (action == PLAYER_STATE.GOTO_SEEDSBAG) {
 			
@@ -55,7 +61,8 @@ if (auto_move) {
 		if (action == PLAYER_STATE.GOTO_SOIL){
 		
 			//wht happens when arrive to the soil
-			show_debug_message("ARRIVED TO SOIL")
+			show_debug_message("ARRIVED TO SOIL")			
+			
 			action = PLAYER_STATE.NONE;
 			if (soil.state == SOIL_STATE.EMPTY && holding == PLAYER_HOLDING.SEEDSBAG) {
 				holding = PLAYER_HOLDING.NONE;
@@ -74,6 +81,8 @@ if (auto_move) {
 		if (action == PLAYER_STATE.GOTO_CRATES){
 			//wht happens when arrive to the soil
 			show_debug_message("ARRIVED TO GOTO_CRATES")
+			
+			
 			action = PLAYER_STATE.NONE;
 			if (holding == PLAYER_HOLDING.NONE) {
 				show_debug_message("HOLDING A CRATE");
@@ -101,13 +110,14 @@ if (auto_move) {
 		if (action == PLAYER_STATE.GOTO_BARN) {
 			//wht happens when arrive to the barn
 			show_debug_message("ARRIVED TO THE BARN");
+			
 			action = PLAYER_STATE.NONE;
 			if (holding == PLAYER_HOLDING.PLANTS_CRATE){
 				if (obj_controller.flower_goal>0) {
 					obj_controller.flower_goal--;
 				}	
 			}
-			
+			//we can remove it later because if player is holding empty crate, will still holding it
 			holding = PLAYER_HOLDING.NONE;
 
 		}
@@ -141,8 +151,6 @@ if (move_x != 0 or move_y != 0 ){
 			sprite_index = spr_player_move_crate;
 		} else if (holding == PLAYER_HOLDING.PLANTS_CRATE){
 			sprite_index = spr_player_move_plant_crate;
-		
-		
 		} else {
 			sprite_index = spr_player_move;
 		}	
@@ -158,7 +166,6 @@ if (move_x != 0 or move_y != 0 ){
 			image_index = 0; // restart animation to 0
 			start_harvest = false;
 		}
-
 		if (image_index >= image_number - 1) {
 			// we just finished harvest animation
 			action = PLAYER_STATE.NONE;
@@ -167,19 +174,13 @@ if (move_x != 0 or move_y != 0 ){
 			can_move = true;
 			
 			//reset the state of the harvested plant
-			//plant.image_index = 0;
-			//plant.alarm[0]= plant.grow_speed;
 			with plant {
 				event_user(1);
-			
-			}
-			
+			}	
 		}
 	} else if (holding == PLAYER_HOLDING.PLANTS_CRATE) {
 		sprite_index = spr_player_idle_plant_crate;
-	
 	}else{
-		
 		sprite_index = spr_player_idle;
 	}
 }

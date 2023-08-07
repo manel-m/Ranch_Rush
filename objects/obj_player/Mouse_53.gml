@@ -1,6 +1,6 @@
 /// @description 
 
-if (can_move and !global.pause) {
+if (!global.pause) {
 	//auto_move = true;
 	//auto_move_x = device_mouse_x(0);
 	//auto_move_y = device_mouse_y(0); 
@@ -8,8 +8,7 @@ if (can_move and !global.pause) {
 	// Find top most object we clicked on
 	var _list = ds_list_create();
 	var _num = instance_position_list(mouse_x, mouse_y, all, _list, false);
-	if _num > 0
-	{
+	if _num > 0 {
 		// Find top most instance under mouse click
 		var _min_depth = _list[| 0].depth
 		var _top_instance = _list[| 0]

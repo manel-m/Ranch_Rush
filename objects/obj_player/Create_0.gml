@@ -1,5 +1,5 @@
 /// @description 
-// You can write your code in this editor
+
 
 
 //Properties 
@@ -48,6 +48,8 @@ action = PLAYER_STATE.NONE;
 seed = noone;
 soil = noone;
 plant = noone;
+
+check_mark = noone;
 
 // to start harvest animation from the first frame
 start_harvest = true;
