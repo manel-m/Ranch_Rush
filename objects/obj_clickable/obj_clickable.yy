@@ -1,20 +1,15 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_crates",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,},
-  ],
+  "name": "obj_clickable",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "obj_FARM",
-    "path": "folders/Objects/obj_FARM.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
-  "parentObjectId": {
-    "name": "obj_clickable",
-    "path": "objects/obj_clickable/obj_clickable.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -30,10 +25,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_crates",
-    "path": "sprites/spr_crates/spr_crates.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

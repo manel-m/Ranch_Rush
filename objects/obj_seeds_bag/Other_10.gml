@@ -4,19 +4,13 @@
 //obj_player.seed = seed;
 //show_debug_message("CLICK ON BAGSEEDS");
  
-var _action = {
-	x: device_mouse_x(0),
-	y: device_mouse_y(0),
-	type: PLAYER_STATE.GOTO_SEEDSBAG,
-	seed: seed,
-	check_mark: instance_create_layer(x+10,y+5,"check_mark_instances", obj_check_mark)
-}
-ds_queue_enqueue(obj_player.actions_queue, _action)
-
-
-
-
-
-
-
-
+//var _action = {
+//	x: device_mouse_x(0),
+//	y: device_mouse_y(0),
+//	type: PLAYER_STATE.GOTO_SEEDSBAG,
+//	seed: seed,
+//	check_mark: instance_create_layer(x+10,y+5,"check_mark_instances", obj_check_mark)
+//}
+var _action = action_create(PLAYER_STATE.GOTO_SEEDSBAG);
+_action.seed = seed;
+ds_queue_enqueue(obj_player.actions_queue, _action);

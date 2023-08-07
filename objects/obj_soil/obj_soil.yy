@@ -12,7 +12,10 @@
     "name": "obj_FARM",
     "path": "folders/Objects/obj_FARM.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_clickable",
+    "path": "objects/obj_clickable/obj_clickable.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
