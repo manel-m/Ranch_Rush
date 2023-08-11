@@ -162,13 +162,13 @@ y += move_y;
 // choose player animation
 if (move_x != 0 or move_y != 0 ){
 		//Animation: Move 
-		if (holdings[0] == PLAYER_HOLDING.CRATE){
-			sprite_index = spr_player_move_crate;
-		} else if (holdings[0] == PLAYER_HOLDING.PLANTS_CRATE){
-			sprite_index = spr_player_move_plant_crate;
-		} else {
+		//if (holdings[0] == PLAYER_HOLDING.CRATE){
+		//	sprite_index = spr_player_move_crate;
+		//} else if (holdings[0] == PLAYER_HOLDING.PLANTS_CRATE){
+		//	sprite_index = spr_player_move_plant_crate;
+		//} else {
 			sprite_index = spr_player_move;
-		}	
+		//}	
 
 } else {
 	//Animation : Idle
@@ -194,11 +194,13 @@ if (move_x != 0 or move_y != 0 ){
 				event_user(1);
 			}	
 		}
-	} else if (holdings[0] == PLAYER_HOLDING.PLANTS_CRATE) {
-		sprite_index = spr_player_idle_plant_crate;
-	} else if (holdings[0] == PLAYER_HOLDING.CRATE) {
-		sprite_index = spr_player_idle_crate;
-	} else {
+	} 
+	//else if (holdings[0] == PLAYER_HOLDING.PLANTS_CRATE) {
+	//	sprite_index = spr_player_idle_plant_crate;
+	//} else if (holdings[0] == PLAYER_HOLDING.CRATE) {
+	//	sprite_index = spr_player_idle_crate;
+	//}
+	else {
 		sprite_index = spr_player_idle;
 	}
 }

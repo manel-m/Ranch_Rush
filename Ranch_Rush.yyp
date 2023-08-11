@@ -50,6 +50,7 @@
     {"id":{"name":"fnt_succes","path":"fonts/fnt_succes/fnt_succes.yy",},},
     {"id":{"name":"spr_tree","path":"sprites/spr_tree/spr_tree.yy",},},
     {"id":{"name":"spr_player_move_plant_crate","path":"sprites/spr_player_move_plant_crate/spr_player_move_plant_crate.yy",},},
+    {"id":{"name":"spr_plant_crate","path":"sprites/spr_plant_crate/spr_plant_crate.yy",},},
     {"id":{"name":"spr_crates","path":"sprites/spr_crates/spr_crates.yy",},},
     {"id":{"name":"scr_holdings","path":"scripts/scr_holdings/scr_holdings.yy",},},
     {"id":{"name":"tsSummerFarm","path":"tilesets/tsSummerFarm/tsSummerFarm.yy",},},
