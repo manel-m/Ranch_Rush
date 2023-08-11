@@ -13,12 +13,12 @@ if (!global.pause) {
 		var _min_depth = _list[| 0].depth
 		var _top_instance = _list[| 0]
 	
-	    for (var i = 1; i < _num; ++i;)
+	    for (var _i = 1; _i < _num; ++_i)
 	    {
-			if (_list[| i].depth < _min_depth) 
+			if (_list[| _i].depth < _min_depth) 
 			{
-				_min_depth = _list[| i].depth
-				_top_instance = _list[| i]
+				_min_depth = _list[| _i].depth
+				_top_instance = _list[| _i]
 			}
 	    }
 		

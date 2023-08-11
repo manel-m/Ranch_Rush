@@ -3,7 +3,7 @@
 draw_self();
 
 //for now just draw bag of seed that moves with the player
-if (holding == PLAYER_HOLDING.SEEDSBAG) {
+if (holdings[0] == PLAYER_HOLDING.SEEDSBAG) {
 	if (seed == SEEDS.CLOVER ) 	draw_sprite_ext( spr_clover_seed, 0, x, y, 0.7, 0.7, 0,c_white, 1 );
 } 
 //else if (holding == PLAYER_HOLDING.CRATE) {
