@@ -1,5 +1,7 @@
 /// @description 
 
+event_inherited();
+
 enum PLANT_STATE {
 	GROWING,
 	READY

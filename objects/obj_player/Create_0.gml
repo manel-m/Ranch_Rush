@@ -21,6 +21,7 @@ auto_move_x = 0;
 auto_move_y = 0;
 
 can_move = true;
+collision_xy = false;
 
 // player state
 enum PLAYER_STATE {

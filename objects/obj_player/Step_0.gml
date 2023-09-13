@@ -39,7 +39,13 @@ if (auto_move) {
 	 _input_x  = sign(auto_move_x - x);
 	 _input_y = sign(auto_move_y - y);
 	//check if player arrived to target
-	if (x == auto_move_x && y == auto_move_y) {
+	
+	var _arrived_to_target = x == auto_move_x && y == auto_move_y;
+	var _cannot_move = collision_xy;
+	
+	collision_xy = false; // reset attribute
+
+	if (_arrived_to_target or _cannot_move) {
 		auto_move = false;
 		
 		// player is going to execute its current action	
@@ -78,7 +84,7 @@ if (auto_move) {
 				//create an instance of oPlant check which seed before the creation than oPlayer.seed = noone;
 				if (seed == SEEDS.CLOVER ) {
 					obj_player.seed = noone;
-					instance_create_layer(soil.x,soil.y-3,"PlantInstances",obj_flower_plant); 
+					instance_create_layer(soil.x,soil.y-3,"Instances",obj_flower_plant); 
 				}
 			}			
 		}
@@ -151,10 +157,28 @@ move_y += round(boost_y);
 boost_x = lerp(boost_x, 0, 0.1);
 boost_y = lerp(boost_y, 0, 0.1);
 
+//collisions
+//Collisions 
+if(collision(x + move_x,y)){
+	while (!collision(x + sign(move_x),y)){
+		x += sign(move_x);
+	}
+	move_x = 0;
+	show_debug_message("PLAYER COLLISION")
+}
 
-// this was needed for collisions 
-//if (move_x ==0 && move_y == 0 && autoMove) autoMove = false;
+if (collision(x, y + move_y)){
+	while (!collision(x ,y + sign(move_y))){
+		y += sign(move_y);
+	}
+	move_y = 0;
+	show_debug_message("PLAYER COLLISION")
+}
 
+if (auto_move and move_x == 0 and move_y == 0) {
+	collision_xy = true;
+	show_debug_message("FULL COLLISION")
+}
 //Move instance
 x += move_x;
 y += move_y;
