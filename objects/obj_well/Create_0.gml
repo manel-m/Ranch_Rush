@@ -1,8 +1,7 @@
-/// @description Init
+/// @description Insert description here
+// You can write your code in this editor
 
 // Inherit the parent event
 event_inherited();
-
-can_collide = true;
 
 mp_grid_add_instances(global.grid, id, false);

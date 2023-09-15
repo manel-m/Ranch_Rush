@@ -4,7 +4,8 @@
 enum RES {
 	WIDTH = 350,
 	HEIGHT = 270,
-	SCALE = 3
+	SCALE = 3,
+	GRID_SIZE = 16
 }
 
 // Create camera that follows the player
@@ -28,3 +29,7 @@ coins = 2000;
 
 //pause the game 
 global.pause = false;
+
+// path finding grid
+global.debug_grid = false;
+global.grid = mp_grid_create(0, 0, room_width / RES.GRID_SIZE, room_height / RES.GRID_SIZE, RES.GRID_SIZE, RES.GRID_SIZE);

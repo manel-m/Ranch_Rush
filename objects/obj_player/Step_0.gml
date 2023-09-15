@@ -1,7 +1,9 @@
 /// @description 
 
+/*
 var _input_x = 0;
 var _input_y = 0;
+*/
 
 if (!auto_move && !global.pause && action == PLAYER_STATE.NONE) {
 	// player is ready to do an action
@@ -9,8 +11,17 @@ if (!auto_move && !global.pause && action == PLAYER_STATE.NONE) {
 		var _action = ds_queue_dequeue(actions_queue);
 		action = _action.type;
 		auto_move = true;
-		auto_move_x = _action.x;
-		auto_move_y = _action.y;
+		var _target_x = _action.x;
+		var _target_y = _action.y;
+		
+		if (x != _target_x and y != _target_y) {
+			while (mp_grid_get_cell(global.grid, _target_x/RES.GRID_SIZE, _target_y/RES.GRID_SIZE) == -1)
+				_target_y += RES.GRID_SIZE / 2;
+				
+			if (mp_grid_path(global.grid, path, x, y, _target_x, _target_y, true)) {
+				path_start(path, move_speed, path_action_stop, true);
+			}
+		}
 		
 		if (struct_exists(_action, "check_mark")) {
 			check_mark = _action.check_mark;
@@ -36,16 +47,19 @@ if (!auto_move && !global.pause && action == PLAYER_STATE.NONE) {
 }
 
 if (auto_move) {
+/*
 	 _input_x  = sign(auto_move_x - x);
 	 _input_y = sign(auto_move_y - y);
-	//check if player arrived to target
-	
-	var _arrived_to_target = x == auto_move_x && y == auto_move_y;
-	var _cannot_move = collision_xy;
-	
-	collision_xy = false; // reset attribute
+*/	
 
-	if (_arrived_to_target or _cannot_move) {
+	//check if player arrived to target
+	//var _arrived_to_target = x == auto_move_x && y == auto_move_y;
+	var _arrived_to_target = path_position == 1;
+	// var _cannot_move = collision_xy;
+	
+	// collision_xy = false; // reset attribute
+
+	if (_arrived_to_target /*or _cannot_move*/) {
 		auto_move = false;
 		
 		// player is going to execute its current action	
@@ -145,7 +159,7 @@ if (auto_move) {
 	}
 }
 
-
+/*
 // Get movment speed 
 move_x= _input_x * move_speed;
 move_y= _input_y * move_speed;
@@ -158,7 +172,6 @@ boost_x = lerp(boost_x, 0, 0.1);
 boost_y = lerp(boost_y, 0, 0.1);
 
 //collisions
-//Collisions 
 if(collision(x + move_x,y)){
 	while (!collision(x + sign(move_x),y)){
 		x += sign(move_x);
@@ -179,12 +192,14 @@ if (auto_move and move_x == 0 and move_y == 0) {
 	collision_xy = true;
 	show_debug_message("FULL COLLISION")
 }
+
 //Move instance
 x += move_x;
 y += move_y;
+*/
 
 // choose player animation
-if (move_x != 0 or move_y != 0 ){
+if (auto_move) {
 		//Animation: Move 
 		//if (holdings[0] == PLAYER_HOLDING.CRATE){
 		//	sprite_index = spr_player_move_crate;
@@ -236,9 +251,9 @@ if (_sign_mouse != 0 && !auto_move ){
 }
 
 //Animation speed 
-if (move_x != 0 && sign(move_x) != _sign_mouse) {
-	image_speed = -1;
-}
-else {
-	image_speed = 1;
-}
+//if (move_x != 0 && sign(move_x) != _sign_mouse) {
+//	image_speed = -1;
+//}
+//else {
+//	image_speed = 1;
+//}
