@@ -6,6 +6,7 @@ enum PLANT_STATE {
 	GROWING,
 	READY
 }
+
 state = noone;
 
 

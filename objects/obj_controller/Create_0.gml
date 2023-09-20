@@ -23,7 +23,7 @@ view_set_camera(0,_camera);
 
 
 //daily goals 
-flower_goal = 1;
+flower_goal = 2;
 daily_coins = 200;
 coins = 2000;
 

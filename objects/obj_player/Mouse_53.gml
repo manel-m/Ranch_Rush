@@ -1,9 +1,6 @@
 /// @description 
 
 if (!global.pause) {
-	//auto_move = true;
-	//auto_move_x = device_mouse_x(0);
-	//auto_move_y = device_mouse_y(0); 
 	
 	// Find top most object we clicked on
 	var _list = ds_list_create();

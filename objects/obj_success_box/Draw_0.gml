@@ -1,4 +1,4 @@
-/// @description to skip draw
+/// @description draw success box
 
 
 draw_self();
