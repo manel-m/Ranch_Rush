@@ -140,8 +140,8 @@ if (auto_move and _arrived_to_target) {
 			for (var _i = 0; _i < 3; _i++) {
 				if (holdings[_i] == PLAYER_HOLDING.PLANTS_CRATE){
 					show_debug_message("SELLING a PLANT CRATE");
-					if (obj_controller.flower_goal>0) {
-						obj_controller.flower_goal--;
+					if (obj_controller.daily_order.flower_goal>0) {
+						obj_controller.daily_order.flower_goal--;
 					}
 				}
 				

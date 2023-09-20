@@ -20,12 +20,39 @@ view_visible[0] = true;
 
 view_set_camera(0,_camera);
 
-
-
-//daily goals 
-flower_goal = 2;
-daily_coins = 200;
+// starting coins that you have
 coins = 2000;
+//weekly_orders ... array that contains 7 daily_order
+weekly_orders = [
+	{ 
+		payment: 200,
+		flower_goal : 1,
+		tomato_goal: 0
+	},
+	
+	{ 
+		payment: 400,
+		flower_goal : 2,
+		tomato_goal: 0
+	},
+	
+	{ 
+		payment: 700,
+		flower_goal : 3,
+		tomato_goal: 0
+	},
+	
+	{ 
+		payment: 700,
+		flower_goal : 4,
+		tomato_goal: 0
+	}
+];
+//set daily_order  from day 0 of weekly_orders
+daily_order = weekly_orders[0]; 
+// add attribute day to track current day of the week, it starts at 0
+day = 0;
+
 
 //pause the game 
 global.pause = false;

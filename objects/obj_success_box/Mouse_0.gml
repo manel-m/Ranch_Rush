@@ -3,6 +3,6 @@
 
 
 with (obj_controller) {
-	event_user(1);
+	event_user(2);
 }
 instance_destroy();
