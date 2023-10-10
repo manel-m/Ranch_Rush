@@ -26,7 +26,8 @@ enum PLAYER_HOLDING {
 	NONE,
 	SEEDSBAG,
 	CRATE,
-	PLANTS_CRATE
+	FLOWER_CRATE,
+	TOMATO_CRATE
 }
 
 //holding = PLAYER_HOLDING.NONE;
@@ -34,7 +35,9 @@ holdings = [PLAYER_HOLDING.NONE, PLAYER_HOLDING.NONE, PLAYER_HOLDING.NONE];
 
 action = PLAYER_STATE.NONE;
 
-seed = noone;
+seed = noone; // seed bag we are holding
+next_seed = noone; // seed bag we are going to hold
+
 soil = noone;
 plant = noone;
 

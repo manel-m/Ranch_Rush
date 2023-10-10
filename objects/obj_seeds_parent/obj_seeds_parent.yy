@@ -1,19 +1,20 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_flower_plant",
+  "name": "obj_seeds_parent",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "obj_PLANTS",
-    "path": "folders/Objects/obj_PLANTS.yy",
+    "name": "obj_SEEDS",
+    "path": "folders/Objects/obj_SEEDS.yy",
   },
   "parentObjectId": {
-    "name": "obj_plant_parent",
-    "path": "objects/obj_plant_parent/obj_plant_parent.yy",
+    "name": "obj_clickable",
+    "path": "objects/obj_clickable/obj_clickable.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -30,10 +31,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_flower_plant",
-    "path": "sprites/spr_flower_plant/spr_flower_plant.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

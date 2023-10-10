@@ -1,19 +1,19 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_flower_plant",
+  "name": "obj_tomato_seed",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "obj_PLANTS",
-    "path": "folders/Objects/obj_PLANTS.yy",
+    "name": "obj_SEEDS",
+    "path": "folders/Objects/obj_SEEDS.yy",
   },
   "parentObjectId": {
-    "name": "obj_plant_parent",
-    "path": "objects/obj_plant_parent/obj_plant_parent.yy",
+    "name": "obj_seeds_parent",
+    "path": "objects/obj_seeds_parent/obj_seeds_parent.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_flower_plant",
-    "path": "sprites/spr_flower_plant/spr_flower_plant.yy",
+    "name": "spr_tomato_seed",
+    "path": "sprites/spr_tomato_seed/spr_tomato_seed.yy",
   },
   "spriteMaskId": null,
   "visible": true,
