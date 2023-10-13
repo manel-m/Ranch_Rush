@@ -27,13 +27,13 @@ weekly_orders = [
 	{ 
 		payment: 200,
 		flower_goal : 1,
-		tomato_goal: 0
+		tomato_goal: 1
 	},
 	
 	{ 
 		payment: 400,
 		flower_goal : 2,
-		tomato_goal: 0
+		tomato_goal: 2
 	},
 	
 	{ 

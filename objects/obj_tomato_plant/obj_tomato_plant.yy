@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_flower_plant",
+  "name": "obj_tomato_plant",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_flower_plant",
-    "path": "sprites/spr_flower_plant/spr_flower_plant.yy",
+    "name": "spr_tomato_plant",
+    "path": "sprites/spr_tomato_plant/spr_tomato_plant.yy",
   },
   "spriteMaskId": null,
   "visible": true,

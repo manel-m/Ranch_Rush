@@ -12,8 +12,8 @@
     "path": "folders/Objects/obj_SEEDS.yy",
   },
   "parentObjectId": {
-    "name": "obj_seeds_bag",
-    "path": "objects/obj_seeds_bag/obj_seeds_bag.yy",
+    "name": "obj_seeds_parent",
+    "path": "objects/obj_seeds_parent/obj_seeds_parent.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

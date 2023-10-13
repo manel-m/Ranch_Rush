@@ -91,10 +91,16 @@ if (auto_move and _arrived_to_target) {
 			soil.state = SOIL_STATE.PLANTED;
 			show_debug_message("SOIL PLANTED")
 				
-			//create an instance of oPlant check which seed before the creation than oPlayer.seed = noone;
+			//create an instance of flower plant check which seed before the creation than oPlayer.seed = noone;
 			if (seed == SEEDS.CLOVER ) {
 				obj_player.seed = noone;
 				instance_create_layer(soil.x,soil.y-3,"Instances",obj_flower_plant); 
+			}
+			
+			//create an instance of tomato plant check which seed before the creation than oPlayer.seed = noone;
+			if (seed == SEEDS.TOMATO ) {
+				obj_player.seed = noone;
+				instance_create_layer(soil.x + 2,soil.y-1,"Instances",obj_tomato_plant); 
 			}
 		}			
 	}
@@ -135,14 +141,22 @@ if (auto_move and _arrived_to_target) {
 		action = PLAYER_STATE.NONE;
 			
 			
-		if (holdings[0] == PLAYER_HOLDING.PLANTS_CRATE) {
+		if (holding_is_plant(holdings[0])) {
 			//sell all produce
 			for (var _i = 0; _i < 3; _i++) {
-				if (holdings[_i] == PLAYER_HOLDING.PLANTS_CRATE){
-					show_debug_message("SELLING a PLANT CRATE");
-					if (obj_controller.daily_order.flower_goal>0) {
-						obj_controller.daily_order.flower_goal--;
-					}
+				switch (holdings[_i]) {
+					case PLAYER_HOLDING.FLOWER_CRATE:
+						show_debug_message("SELLING a PLANT CRATE");
+						if (obj_controller.daily_order.flower_goal>0) {
+							obj_controller.daily_order.flower_goal--;
+						}
+						break;
+					case PLAYER_HOLDING.TOMATO_CRATE:
+						show_debug_message("SELLING a TOMATO CRATE");
+						if (obj_controller.daily_order.tomato_goal>0) {
+							obj_controller.daily_order.tomato_goal--;
+						}
+						break;
 				}
 				
 			}
@@ -176,7 +190,11 @@ if (auto_move) {
 			can_move = true;
 			
 			//replace an empty crate with a plants crate to the holdings
-			holdings_pickup_plant_crate()
+			if (plant.plant_type == PLANT_TYPES.FLOWER)
+				holdings_pickup_plant_crate(PLAYER_HOLDING.FLOWER_CRATE);
+				
+			if (plant.plant_type == PLANT_TYPES.TOMATO)
+				holdings_pickup_plant_crate(PLAYER_HOLDING.TOMATO_CRATE);	
 			
 			//reset the state of the harvested plant (plant grow again)
 			with plant {

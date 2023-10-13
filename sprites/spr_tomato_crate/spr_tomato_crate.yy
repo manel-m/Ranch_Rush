@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_plant_crate",
+  "name": "spr_tomato_crate",
   "bbox_bottom": 15,
   "bbox_left": 0,
   "bbox_right": 15,
@@ -25,14 +25,14 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "sFarm",
-    "path": "folders/Sprites/sFarm.yy",
+    "name": "spr_plant_crate",
+    "path": "folders/Sprites/sFarm/spr_plant_crate.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_plant_crate",
+    "name": "spr_tomato_crate",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a8561be4-6b2c-4e32-9ee8-8380f8f8e821","path":"sprites/spr_plant_crate/spr_plant_crate.yy",},},},"Disabled":false,"id":"68c9eb78-b445-4bbe-9b07-c25c782c0dac","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a8561be4-6b2c-4e32-9ee8-8380f8f8e821","path":"sprites/spr_tomato_crate/spr_tomato_crate.yy",},},},"Disabled":false,"id":"d592dae2-ff6c-4997-8f25-a71cd3183d60","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

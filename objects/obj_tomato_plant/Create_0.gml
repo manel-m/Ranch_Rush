@@ -5,5 +5,8 @@
 // Inherit the parent event
 event_inherited();
 
-plant_type = PLANT_TYPES.FLOWER;
+image_xscale = 0.8;
+image_yscale = 0.8;
+
+plant_type = PLANT_TYPES.TOMATO;
 
