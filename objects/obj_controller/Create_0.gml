@@ -39,13 +39,13 @@ weekly_orders = [
 	{ 
 		payment: 700,
 		flower_goal : 3,
-		tomato_goal: 0
+		tomato_goal: 3
 	},
 	
 	{ 
 		payment: 700,
 		flower_goal : 4,
-		tomato_goal: 0
+		tomato_goal: 4
 	}
 ];
 //set daily_order  from day 0 of weekly_orders

@@ -35,7 +35,8 @@ if (!auto_move && !global.pause && action == PLAYER_STATE.NONE) {
 			show_debug_message("ACTION: global click")
 		} else if (action == PLAYER_STATE.GOTO_SEEDSBAG) {
 			show_debug_message("ACTION: goto seed bag")
-			seed = _action.seed			
+			next_seed = _action.seed		
+			/////////////////////////////////////////////////////////////////
 		} else if (action == PLAYER_STATE.GOTO_SOIL) {
 			show_debug_message("ACTION: goto soil")
 			soil = _action.soil
@@ -74,7 +75,10 @@ if (auto_move and _arrived_to_target) {
 
 			// hold a seed bag
 			holdings[0] = PLAYER_HOLDING.SEEDSBAG;
+			seed = next_seed;
 		}
+		
+		next_seed = noone;
 			
 		//change player spirte that holding the bag of seeds 
 		//change it in player animation //draw it in draw events (checking which seed)
