@@ -27,7 +27,7 @@ weekly_orders = [
 	{ 
 		payment: 200,
 		flower_goal : 1,
-		tomato_goal: 1
+		tomato_goal: 0
 	},
 	
 	{ 

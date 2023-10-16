@@ -26,12 +26,18 @@
     {"name":"inst_5F1D062A","path":"rooms/gameRoom/gameRoom.yy",},
     {"name":"inst_39F260AF","path":"rooms/gameRoom/gameRoom.yy",},
     {"name":"inst_1D2DB364","path":"rooms/gameRoom/gameRoom.yy",},
+    {"name":"inst_71EA8D7C","path":"rooms/gameRoom/gameRoom.yy",},
   ],
   "isDnd": false,
   "layers": [
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"GUI_Instances","depth":-400,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7E49CAF4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_goal_box","path":"objects/obj_goal_box/obj_goal_box.yy",},"properties":[],"rotation":0.0,"scaleX":3.6666663,"scaleY":2.0,"x":12.0,"y":12.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7E49CAF4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_goal_box","path":"objects/obj_goal_box/obj_goal_box.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_goal_box","path":"objects/obj_goal_box/obj_goal_box.yy",},"propertyId":{"name":"plant_type","path":"objects/obj_goal_box/obj_goal_box.yy",},"value":"PLANT_TYPES.FLOWER",},
+          ],"rotation":0.0,"scaleX":3.4444442,"scaleY":2.0,"x":12.0,"y":12.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_46A05E17","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_coins","path":"objects/obj_coins/obj_coins.yy",},"properties":[],"rotation":0.0,"scaleX":5.5555553,"scaleY":2.1111112,"x":203.0,"y":264.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_71EA8D7C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_goal_box","path":"objects/obj_goal_box/obj_goal_box.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_goal_box","path":"objects/obj_goal_box/obj_goal_box.yy",},"propertyId":{"name":"plant_type","path":"objects/obj_goal_box/obj_goal_box.yy",},"value":"PLANT_TYPES.TOMATO",},
+          ],"rotation":0.0,"scaleX":3.4444442,"scaleY":2.0,"x":48.0,"y":12.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":true,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"check_mark_instances","depth":-300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":true,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
