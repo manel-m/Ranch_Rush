@@ -63,6 +63,7 @@
     {"id":{"name":"obj_well","path":"objects/obj_well/obj_well.yy",},},
     {"id":{"name":"spr_barn","path":"sprites/spr_barn/spr_barn.yy",},},
     {"id":{"name":"spr_check_mark","path":"sprites/spr_check_mark/spr_check_mark.yy",},},
+    {"id":{"name":"scr_plants","path":"scripts/scr_plants/scr_plants.yy",},},
     {"id":{"name":"obj_seeds_parent","path":"objects/obj_seeds_parent/obj_seeds_parent.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_crates","path":"objects/obj_crates/obj_crates.yy",},},

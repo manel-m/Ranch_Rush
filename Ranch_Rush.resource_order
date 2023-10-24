@@ -42,6 +42,7 @@
     {"name":"obj_well","order":3,"path":"objects/obj_well/obj_well.yy",},
     {"name":"spr_barn","order":4,"path":"sprites/spr_barn/spr_barn.yy",},
     {"name":"spr_check_mark","order":1,"path":"sprites/spr_check_mark/spr_check_mark.yy",},
+    {"name":"scr_plants","order":3,"path":"scripts/scr_plants/scr_plants.yy",},
     {"name":"obj_seeds_parent","order":1,"path":"objects/obj_seeds_parent/obj_seeds_parent.yy",},
     {"name":"obj_crates","order":2,"path":"objects/obj_crates/obj_crates.yy",},
     {"name":"scr_collisions","order":2,"path":"scripts/scr_collisions/scr_collisions.yy",},

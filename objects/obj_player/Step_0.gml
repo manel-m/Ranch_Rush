@@ -95,17 +95,9 @@ if (auto_move and _arrived_to_target) {
 			soil.state = SOIL_STATE.PLANTED;
 			show_debug_message("SOIL PLANTED")
 				
-			//create an instance of flower plant check which seed before the creation than oPlayer.seed = noone;
-			if (seed == SEEDS.CLOVER ) {
-				obj_player.seed = noone;
-				instance_create_layer(soil.x,soil.y-3,"Instances",obj_flower_plant); 
-			}
+			plant_create_instance(seed);
 			
-			//create an instance of tomato plant check which seed before the creation than oPlayer.seed = noone;
-			if (seed == SEEDS.TOMATO ) {
-				obj_player.seed = noone;
-				instance_create_layer(soil.x + 2,soil.y-1,"Instances",obj_tomato_plant); 
-			}
+			obj_player.seed = noone;
 		}			
 	}
 		
@@ -194,11 +186,7 @@ if (auto_move) {
 			can_move = true;
 			
 			//replace an empty crate with a plants crate to the holdings
-			if (plant.plant_type == PLANT_TYPES.FLOWER)
-				holdings_pickup_plant_crate(PLAYER_HOLDING.FLOWER_CRATE);
-				
-			if (plant.plant_type == PLANT_TYPES.TOMATO)
-				holdings_pickup_plant_crate(PLAYER_HOLDING.TOMATO_CRATE);	
+			plant_in_crate(plant.plant_type);	
 			
 			//reset the state of the harvested plant (plant grow again)
 			with plant {
