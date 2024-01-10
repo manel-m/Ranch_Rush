@@ -56,6 +56,7 @@
     {"id":{"name":"scr_holdings","path":"scripts/scr_holdings/scr_holdings.yy",},},
     {"id":{"name":"tsSummerFarm","path":"tilesets/tsSummerFarm/tsSummerFarm.yy",},},
     {"id":{"name":"spr_player_idle","path":"sprites/spr_player_idle/spr_player_idle.yy",},},
+    {"id":{"name":"spr_shopping_card","path":"sprites/spr_shopping_card/spr_shopping_card.yy",},},
     {"id":{"name":"obj_clickable","path":"objects/obj_clickable/obj_clickable.yy",},},
     {"id":{"name":"spr_bg_summer","path":"sprites/spr_bg_summer/spr_bg_summer.yy",},},
     {"id":{"name":"obj_soil","path":"objects/obj_soil/obj_soil.yy",},},
